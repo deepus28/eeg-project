@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b0f2a;
+    color: white;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #11163a;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+}
+
+.main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.card {
+    background: #1a1f4d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: #1a1f4d;
+    padding: 30px;
+    border-radius: 10px;
+}

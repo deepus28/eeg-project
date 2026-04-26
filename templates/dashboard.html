@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EEG Mental State Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a1f44, #123c7a);
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .box {
+            background: #1e3c72;
+            padding: 30px;
+            border-radius: 15px;
+            width: 500px;
+            margin: auto;
+        }
+
+        button {
+            background: #00d4ff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        canvas {
+            background: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>EEG Mental State Detection</h1>
+
+    <input type="file" id="file">
+    <br><br>
+    <button onclick="predict()">Analyze</button>
+
+    <h2 id="result"></h2>
+
+    <h3>EEG Signal</h3>
+    <canvas id="chart" width="400" height="200"></canvas>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
